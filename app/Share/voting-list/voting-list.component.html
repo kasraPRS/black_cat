@@ -1,0 +1,48 @@
+<h2>استان {{ city_name }}</h2>
+<div class="list_holder">
+    <app-input-fields [placeHolder]="'Search'"></app-input-fields>
+    <div class="list_body">
+        <div class="content">
+
+            <div class="title">
+                <div class="fancy-border">
+                    <span>
+                        خوراکهای بومی
+                    </span>
+                </div>
+            </div>
+
+
+            <label *ngFor="let food of foodList.foods">
+                <p>{{ food.title }}</p>
+                <input type="checkbox" name="selectedFood" (click)="select(food)" />
+                <div [ngClass]="{ divChecked: food.voted }">
+                    <img src="assets/img/home_page/mark.png" alt="checked" [ngClass]="{ imgChecked: food.voted }" />
+                </div>
+            </label>
+
+            <div class="title">
+                <div class="fancy-border">
+                    <span>
+                        خوراکهای بومی
+                    </span>
+                </div>
+            </div>
+
+            <label *ngFor="let commonFood of foodList.common_foods">
+                <p>{{ commonFood.title }}</p>
+                <input type="checkbox" name="selectedFood" (click)="select(commonFood)" />
+                <div [ngClass]="{ divChecked: commonFood.voted }">
+                    <img src="assets/img/home_page/mark.png" alt="checked"
+                        [ngClass]="{ imgChecked: commonFood.voted }" />
+                </div>
+            </label>
+
+
+
+        </div>
+    </div>
+    <button class="submit-btn" (click)="submit()">
+        <div>ثبت</div>
+    </button>
+</div>

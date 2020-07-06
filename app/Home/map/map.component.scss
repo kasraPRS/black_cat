@@ -1,0 +1,258 @@
+.map {
+  width: 90vw;
+  height: 85vh;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  [id^="Province_"] {
+    transition: all 0.4s;
+  }
+
+  [id^="Province_"]:hover {
+    fill: #c9d99e;
+  }
+}
+// @media only screen and (max-width: 1200px) {
+//   .map {
+//     width: 90vw;
+//     height: 80vh;
+//     margin-top: 0;
+//   }
+// }
+// @media only screen and (max-height: 764px) {
+//   .map {
+//     width: 90vw;
+//     height: 75vh;
+//     margin-top: 0;
+//   }
+// }
+
+// @media only screen and (max-height: 1600px) {
+//   .map {
+//     width: 90vw;
+//     height: 82vh;
+//     margin-top: 0;
+//   }
+// }
+// .heyo:hover {
+//   fill: rgba(0, 0, 0, 0.3);
+//   transition: all 0.3s;
+// }
+// .enabled {
+//   // fill: #21669E;
+//   cursor: pointer;
+// }
+
+// .description {
+//   text-decoration: none;
+//   pointer-events: none;
+//   min-width: 100px;
+//   position: absolute;
+//   text-align: center;
+//   padding: 2px 2px;
+//   z-index: 5;
+//   line-height: 30px;
+//   margin: 0 auto;
+//   color: #fafafa;
+//   border-radius: 15px;
+//   border: 2px solid #00acf7;
+//   transform: translate(-50%, -70%);
+//   display: none;
+//   background-color: #2c3988;
+//   font-family: IRANYekan;
+//   font-weight: bold;
+//   font-size: 18px;
+
+//   li {
+//     text-decoration: none;
+//   }
+//   &.active {
+//     display: block;
+//     text-decoration: none;
+//   }
+//   &:after,
+//   &:before {
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     left: 50%;
+//     transform: translate(-50%);
+//     width: 0;
+//     height: 0;
+//     border-style: solid;
+//   }
+
+//   &:after {
+//     border-color: #2c3988 transparent transparent transparent;
+//     border-width: 13px;
+//   }
+
+//   &:before {
+//     top: calc(100% + 1px);
+//     border-color: #00acf7 transparent transparent transparent;
+//     border-width: 13px;
+//   }
+
+//   .checkAndFill {
+//     width: 200px;
+//     height: 300px;
+//     background-color: white;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//   }
+//   .checkAndFill::after {
+//     content: " \2714";
+//     font-weight: bold;
+//     display: inline-block;
+//     color: #ffec9d;
+//   }
+// }
+
+// .modal {
+//   display: none; /* Hidden by default */
+//   position: fixed; /* Stay in place */
+//   z-index: 1; /* Sit on top */
+//   left: 0;
+//   top: 0;
+//   width: 100%; /* Full width */
+//   height: 100%; /* Full height */
+//   // overflow: auto; /* Enable scroll if needed */
+//   background-color: rgb(0, 0, 0); /* Fallback color */
+//   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+//   justify-content: center;
+//   align-items: center;
+
+//   &__view {
+//     background-color: #fafafa;
+//     width: 40%; /* Could be more or less, depending on screen size */
+//     // height: 40%;
+//     max-height: calc(100vh - 300px);
+//     border-radius: 10px;
+//     position: relative;
+//     font-family: IRANYekan;
+
+//     /* The Close Button */
+//     .close {
+//       width: 40px;
+//       height: 40px;
+//       border-radius: 50%;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       background-color: #ffec9d;
+//       color: rgb(227, 58, 58);
+//       font-size: 25px;
+//       font-weight: bold;
+//       // transform: translate(-50% , -50%);
+//       position: absolute;
+//       top: -20px;
+//       left: -20px;
+//       z-index: 20;
+//     }
+
+//     .close:hover,
+//     .close:focus {
+//       color: black;
+//       text-decoration: none;
+//       cursor: pointer;
+//     }
+
+//     .icon {
+//       width: 75px;
+//       height: 75px;
+//       border-radius: 50%;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       // transform: translate(-50% , -50%);
+//       position: absolute;
+//       top: -37.5px;
+//       left: 50%;
+//       transform: translateX(-50%);
+//       z-index: 20;
+
+//       img {
+//         width: 75px;
+//         height: 75px;
+//       }
+//       div {
+//         width: 35px;
+//         height: 35px;
+//         border-radius: 50%;
+//         display: flex;
+//         justify-content: center;
+//         align-items: flex-end;
+//         color: rgb(227, 58, 58);
+//         font-size: 25px;
+//         font-weight: bold;
+//         z-index: 21;
+//       }
+
+//       svg {
+//         position: absolute;
+//         width: 50px;
+
+//         top: 15%;
+//         left: 25%;
+//       }
+//     }
+
+//     .modal__content {
+//       background-color: #fafafa;
+//       width: 100%;
+//       // height: 40%;
+//       max-height: calc(100vh - 300px);
+//       border-radius: 10px;
+//       position: relative;
+//       overflow-y: auto;
+//       font-family: IRANYekan;
+
+//       ‍ &-title {
+//         direction: rtl;
+//         text-align: center;
+//         font-family: IRANYekan;
+//         font-size: 14px;
+//         font-weight: 700;
+//         font-stretch: normal;
+//         font-style: normal;
+//         line-height: 1.75;
+//         letter-spacing: normal;
+//         color: #2c3988;
+//         padding-top: 50px;
+//       }
+
+//       &-text {
+//         // width: fit-content;
+//         // height: fit-content;
+//         direction: rtl;
+//         // margin: 5% auto; /* 15% from the top and centered */
+//         padding: 40px;
+//         font-family: IRANYekan;
+//         font-size: 14px;
+//         font-weight: 700;
+//         font-stretch: normal;
+//         font-style: normal;
+//         line-height: 1.75;
+//         letter-spacing: normal;
+//         text-align: right;
+//         color: #2c3988;
+//       }
+//     }
+//   }
+//   @media only screen and (max-width: 1600px) {
+//     &__view {
+//       width: 60%;
+//     }
+//   }
+//   @media only screen and (max-width: 1400px) {
+//     &__view {
+//       width: 60%;
+//     }
+//   }
+//   @media only screen and (max-width: 1200px) {
+//     &__view {
+//       width: 60%;
+//     }
+//   }
+// }

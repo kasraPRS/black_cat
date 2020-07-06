@@ -1,0 +1,18 @@
+<div class="navigation_wrapper">
+    <div class="share"></div>
+
+    <div class="toggle_buttons">
+
+
+        <button class="btn" (click)="province($event)" [disabled]='province_button'>برترین غذا‌های هر استان</button>
+
+        <button class="btn active" (click)="iran($event)" [disabled]='iran_button'>برترین غذا‌های ایران</button>  
+        
+
+    </div>
+
+    <div class="close" (click)="back()"></div>
+</div>
+
+<score-list [listItem]="list" [moreButton]="more_button" (test)="more($event)">
+</score-list>

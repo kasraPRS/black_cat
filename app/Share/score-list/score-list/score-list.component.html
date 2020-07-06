@@ -1,0 +1,26 @@
+<div class="scoreboard__desktop" dir="rtl">
+    <div class="scoreboard__desktop-container" dir="rtl">
+
+        <div class="provinces__list">
+            <div class="provinces__list-items">
+
+
+                <div class="provinces__list-items-item" *ngFor="let item of listItem; let i = index">
+                    <div class="first-part">
+                        <div class="number">{{i+1}}</div>
+
+                        <div>
+                            <div class="food-name">{{item.title}}</div>
+                            <div class="province-name" *ngIf="item.provinces">{{item['provinces'][0]['title']}}</div>
+                        </div>
+                    </div>
+                    <div class="second-part">
+                        <div class="votescount">{{item['food_votes_count']}} رای</div>
+                    </div>
+                </div>
+            </div>
+            <div class="more" *ngIf="moreButton" (click)="more()">بیشتر</div>
+        </div>
+
+    </div>
+</div>

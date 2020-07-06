@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 62.5%;
+  background-image: url("./assets/svg/newback.svg");
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+}
+html,
+body {
+  height: 100%;
+}
+* {
+  margin: 0;
+  font-family: "IRANYekan";
+}
+@font-face {
+  font-family: "IRANYekan";
+  font-style: normal;
+  font-weight: 900;
+  src: url("assets/fonts/fonts/IRANYekanRegular.ttf");
+}
+.telegram-background {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0idGVsZWdyYW0iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI4LjA1NyIgaGVpZ2h0PSIyNy45OSIgdmlld0JveD0iMCAwIDI4LjA1NyAyNy45OSI+DQogIDxwYXRoIGlkPSJFeGNsdXNpb25fNCIgZGF0YS1uYW1lPSJFeGNsdXNpb24gNCIgZD0iTTE0LjAyOSwyNy45OUExNCwxNCwwLDEsMSwyMy45NDcsNC4xYTEzLjk5NSwxMy45OTUsMCwwLDEtOS45MTgsMjMuODlabS0uMTg4LTkuNTY0aDBMMTcuMzQ5LDIxYTEuMTc3LDEuMTc3LDAsMCwwLC41NjQuMTc4Yy4zNDgsMCwuNTkxLS4yNjcuNy0uNzcxbDIuMy0xMC44MjNhMS4xLDEuMSwwLDAsMC0uMTI5LS45MzcuNjI1LjYyNSwwLDAsMC0uNTA2LS4yMjcsMS4wMTMsMS4wMTMsMCwwLDAtLjMzOS4wNjNMNi40MiwxMy42OTJjLS40NTkuMTc5LS43MTguNDExLS43MTEuNjM3LjAwNi4xOTIuMjA3LjM2NS41NTIuNDc0bDMuNDYyLDEuMDc4LDguMDMyLTUuMDQ1YS43MDcuNzA3LDAsMCwxLC4zNzEtLjEzYy4wODUsMCwuMTQ2LjAyOC4xNjQuMDc1cy0uMDE1LjEyMi0uMS4ybC02LjUsNS44NTgtLjI0OSwzLjU2YS44ODYuODg2LDAsMCwwLC43LS4zNDFsMS42OTQtMS42MjhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDApIiBmaWxsPSIjZmZmIi8+DQo8L3N2Zz4NCg==");
+  width: 28px;
+  height: 28px;
+  background-size: 28px;
+  display: block;
+}
+
+.wrapper {
+  position: relative;
+  height: 100vh;
+  #navigation-loading {
+    display: block;
+    height: 4px;
+    overflow: hidden;
+    transition: opacity 250ms linear;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+  }
+}
